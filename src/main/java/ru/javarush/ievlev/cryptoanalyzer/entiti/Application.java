@@ -19,7 +19,8 @@ public class Application {
             Result result = mainController.doAction(action, parameters);
             return result;
         } else {
-            throw new AppException();
+            throw new AppException("no args");
         }
     }
+
 }
